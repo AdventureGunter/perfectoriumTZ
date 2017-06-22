@@ -1,0 +1,13 @@
+//
+   Created by User on 22.06.2017.
+
+html
+    head
+        title= 'parser result'
+    body
+        each item in resultArray
+            h1= item.title
+            a(href=item.link)= 'Оригинал'
+            p= item.description
+            each pictureSrc in item.pictures
+                img(src= pictureSrc)
